@@ -1,6 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-# Create your views here.
 
+# Create your views here.
+post = [
+    {
+        
+    }
+]
 def home(request):
-    return HttpResponse('<h1>News Home</h1>') 
+    return render(request, 'news/home.html')
+
+def about(request):
+    return render(request, 'news/about.html')
